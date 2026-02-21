@@ -135,7 +135,7 @@ function initCheckoutButton() {
             params.set('kit', selectedKit);
 
             // Redirect to checkout with parameters
-            window.location.href = ``;
+            window.location.href = `https://www.dynadot.com/p`;
         });
     }
 }
