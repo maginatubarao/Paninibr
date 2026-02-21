@@ -46,60 +46,83 @@ function initFAQ() {
 // Kit Selection
 let selectedKit = 'colecionador'; // Default selection
 
-function initKitSelection() {
-    const kitCards = document.querySelectorAll('.flex.flex-col.gap-4 > div');
+function initCheckoutButton() {
+  const checkoutButton = document.querySelector('button.bg-panini-green');
 
-    // Kit data
-    const kits = {
-        'basico': { name: 'Kit Básico', price: 39.90, packets: 10 },
-        'iniciante': { name: 'Kit Iniciante', price: 59.90, packets: 30 },
-        'campeao': { name: 'Kit Campeão', price: 97.90, packets: 60 },
-        'colecionador': { name: 'Kit Colecionador', price: 119.90, packets: 90 }
-    };
+  const checkoutLinks = {
+    basico: "https://seguro.copa-lojaspanini.shop/pay/d19ab365-d732-4e99-8e71-a5c1f3d84569",
+    iniciante: "https://seguro.copa-lojaspanini.shop/pay/b1017a11-9a69-4f9e-b1f3-de8a3699103b",
+    campeao: "https://seguro.copa-lojaspanini.shop/pay/c594ff74-4b96-4b2b-bf8d-267fc3e94565",
+    colecionador: "https://seguro.copa-lojaspanini.shop/pay/b99a115f-5543-4c70-90a1-64e8fe807092"
+  };
 
-    kitCards.forEach((card, index) => {
-        const kitId = Object.keys(kits)[index];
+  if (checkoutButton) {
+    checkoutButton.addEventListener('click', () => {
 
-        // Add click handler
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', () => {
-            // Remove selection from all cards
-            kitCards.forEach(c => {
-                c.classList.remove('border-panini-green', 'shadow-lg');
-                c.classList.add('border-primary', 'shadow-sm');
+      if (selectedKit && checkoutLinks[selectedKit]) {
+        window.location.href = checkoutLinks[selectedKit];
+      } else {
+        alert("Selecione um kit antes de continuar!");
+      }
 
-                // Update radio button visual
-                const radio = c.querySelector('.w-6.h-6.rounded-full');
-                if (radio) {
-                    radio.classList.remove('border-panini-green');
-                    radio.classList.add('border-muted-foreground/40');
-                    const innerCircle = radio.querySelector('.w-3\\.5');
-                    if (innerCircle) innerCircle.remove();
-                }
-            });
-
-            // Add selection to clicked card
-            card.classList.remove('border-primary', 'shadow-sm');
-            card.classList.add('border-panini-green', 'shadow-lg');
-
-            // Update radio button
-            const radio = card.querySelector('.w-6.h-6.rounded-full');
-            if (radio) {
-                radio.classList.remove('border-muted-foreground/40');
-                radio.classList.add('border-panini-green');
-
-                // Add inner circle if not exists
-                if (!radio.querySelector('.w-3\\.5')) {
-                    const innerCircle = document.createElement('div');
-                    innerCircle.className = 'w-3.5 h-3.5 rounded-full bg-panini-green';
-                    radio.appendChild(innerCircle);
-                }
-            }
-
-            selectedKit = kitId;
-        });
     });
+  }
 }
+
+// function initKitSelection() {
+//     const kitCards = document.querySelectorAll('.flex.flex-col.gap-4 > div');
+
+//     // Kit data
+//     const kits = {
+//         'basico': { name: 'Kit Básico', price: 39.90, packets: 10 },
+//         'iniciante': { name: 'Kit Iniciante', price: 59.90, packets: 30 },
+//         'campeao': { name: 'Kit Campeão', price: 97.90, packets: 60 },
+//         'colecionador': { name: 'Kit Colecionador', price: 119.90, packets: 90 }
+//     };
+
+//     kitCards.forEach((card, index) => {
+//         const kitId = Object.keys(kits)[index];
+
+//         // Add click handler
+//         card.style.cursor = 'pointer';
+//         card.addEventListener('click', () => {
+//             // Remove selection from all cards
+//             kitCards.forEach(c => {
+//                 c.classList.remove('border-panini-green', 'shadow-lg');
+//                 c.classList.add('border-primary', 'shadow-sm');
+
+//                 // Update radio button visual
+//                 const radio = c.querySelector('.w-6.h-6.rounded-full');
+//                 if (radio) {
+//                     radio.classList.remove('border-panini-green');
+//                     radio.classList.add('border-muted-foreground/40');
+//                     const innerCircle = radio.querySelector('.w-3\\.5');
+//                     if (innerCircle) innerCircle.remove();
+//                 }
+//             });
+
+//             // Add selection to clicked card
+//             card.classList.remove('border-primary', 'shadow-sm');
+//             card.classList.add('border-panini-green', 'shadow-lg');
+
+//             // Update radio button
+//             const radio = card.querySelector('.w-6.h-6.rounded-full');
+//             if (radio) {
+//                 radio.classList.remove('border-muted-foreground/40');
+//                 radio.classList.add('border-panini-green');
+
+//                 // Add inner circle if not exists
+//                 if (!radio.querySelector('.w-3\\.5')) {
+//                     const innerCircle = document.createElement('div');
+//                     innerCircle.className = 'w-3.5 h-3.5 rounded-full bg-panini-green';
+//                     radio.appendChild(innerCircle);
+//                 }
+//             }
+
+//             selectedKit = kitId;
+//         });
+//     });
+// }
 
 // Checkout Button
 function initCheckoutButton() {
