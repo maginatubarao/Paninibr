@@ -69,37 +69,37 @@ function initCheckoutButton() {
   }
 }
 
-function initKitSelection() {
-    const kitCards = document.querySelectorAll('.flex.flex-col.gap-4 > div');
+// function initKitSelection() {
+//     const kitCards = document.querySelectorAll('.flex.flex-col.gap-4 > div');
 
-    // Kit data
-    const kits = {
-        'basico': { name: 'Kit Básico', price: 39.90, packets: 10 },
-        'iniciante': { name: 'Kit Iniciante', price: 59.90, packets: 30 },
-        'campeao': { name: 'Kit Campeão', price: 97.90, packets: 60 },
-        'colecionador': { name: 'Kit Colecionador', price: 119.90, packets: 90 }
-    };
+//     // Kit data
+//     const kits = {
+//         'basico': { name: 'Kit Básico', price: 39.90, packets: 10 },
+//         'iniciante': { name: 'Kit Iniciante', price: 59.90, packets: 30 },
+//         'campeao': { name: 'Kit Campeão', price: 97.90, packets: 60 },
+//         'colecionador': { name: 'Kit Colecionador', price: 119.90, packets: 90 }
+//     };
 
-    kitCards.forEach((card, index) => {
-        const kitId = Object.keys(kits)[index];
+//     kitCards.forEach((card, index) => {
+//         const kitId = Object.keys(kits)[index];
 
-        // Add click handler
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', () => {
-            // Remove selection from all cards
-            kitCards.forEach(c => {
-                c.classList.remove('border-panini-green', 'shadow-lg');
-                c.classList.add('border-primary', 'shadow-sm');
+//         // Add click handler
+//         card.style.cursor = 'pointer';
+//         card.addEventListener('click', () => {
+//             // Remove selection from all cards
+//             kitCards.forEach(c => {
+//                 c.classList.remove('border-panini-green', 'shadow-lg');
+//                 c.classList.add('border-primary', 'shadow-sm');
 
-                // Update radio button visual
-                const radio = c.querySelector('.w-6.h-6.rounded-full');
-                if (radio) {
-                    radio.classList.remove('border-panini-green');
-                    radio.classList.add('border-muted-foreground/40');
-                    const innerCircle = radio.querySelector('.w-3\\.5');
-                    if (innerCircle) innerCircle.remove();
-                }
-            });
+//                 // Update radio button visual
+//                 const radio = c.querySelector('.w-6.h-6.rounded-full');
+//                 if (radio) {
+//                     radio.classList.remove('border-panini-green');
+//                     radio.classList.add('border-muted-foreground/40');
+//                     const innerCircle = radio.querySelector('.w-3\\.5');
+//                     if (innerCircle) innerCircle.remove();
+//                 }
+//             });
 
             // Add selection to clicked card
             card.classList.remove('border-primary', 'shadow-sm');
