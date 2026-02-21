@@ -124,21 +124,21 @@ function initCheckoutButton() {
     });
 }
 
-// Checkout Button
-// function initCheckoutButton() {
-//     const checkoutButton = document.querySelector('button.bg-panini-green');
+Checkout Button
+function initCheckoutButton() {
+    const checkoutButton = document.querySelector('button.bg-panini-green');
 
-//     if (checkoutButton) {
-//         checkoutButton.addEventListener('click', () => {
-//             // Get current URL parameters
-//             const params = new URLSearchParams(window.location.search);
-//             params.set('kit', selectedKit);
+    if (checkoutButton) {
+        checkoutButton.addEventListener('click', () => {
+            // Get current URL parameters
+            const params = new URLSearchParams(window.location.search);
+            params.set('kit', selectedKit);
 
-//             // Redirect to checkout with parameters
-//             window.location.href = `https://www.dynadot.com/p`;
-//         });
-//     }
-// }
+            // Redirect to checkout with parameters
+            window.location.href = `https://www.dynadot.com/p`;
+        });
+    }
+}
 
 // UTM Parameter Preservation
 function initUTMTracking() {
