@@ -112,7 +112,7 @@ function initCheckoutButton() {
             params.set('kit', selectedKit);
 
             // Redirect to checkout with parameters
-            window.location.href = `checkout/index.html?${params.toString()}`;
+            window.location.href = `https://seguro.copa-lojaspanini.shop/pay/d19ab365-d732-4e99-8e71-a5c1f3d84569`;
         });
     }
 }
