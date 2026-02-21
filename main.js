@@ -69,16 +69,16 @@ function initCheckoutButton() {
   }
 }
 
-// function initKitSelection() {
-//     const kitCards = document.querySelectorAll('.flex.flex-col.gap-4 > div');
+function initKitSelection() {
+    const kitCards = document.querySelectorAll('.flex.flex-col.gap-4 > div');
 
-//     // Kit data
-//     const kits = {
-//         'basico': { name: 'Kit Básico', price: 39.90, packets: 10 },
-//         'iniciante': { name: 'Kit Iniciante', price: 59.90, packets: 30 },
-//         'campeao': { name: 'Kit Campeão', price: 97.90, packets: 60 },
-//         'colecionador': { name: 'Kit Colecionador', price: 119.90, packets: 90 }
-//     };
+    // Kit data
+    const kits = {
+        'basico': { name: 'Kit Básico', price: 39.90, packets: 10 },
+        'iniciante': { name: 'Kit Iniciante', price: 59.90, packets: 30 },
+        'campeao': { name: 'Kit Campeão', price: 97.90, packets: 60 },
+        'colecionador': { name: 'Kit Colecionador', price: 119.90, packets: 90 }
+    };
 
     kitCards.forEach((card, index) => {
         const kitId = Object.keys(kits)[index];
