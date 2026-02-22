@@ -1,0 +1,1318 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: Set the document title to the name of your application -->
+  <title>Panini Copa 2026</title>
+  <meta name="description" content="Garanta seu álbum de capa dura com 30, 60 ou 90 pacotes de figurinhas inclusos.">
+  <meta name="author" content="Lovable">
+
+  <!-- TODO: Update og:title to match your application name -->
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Lovable">
+  <meta name="twitter:image" content="./assets/social-image.jpg">
+
+
+
+
+
+
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta property="og:title" content="Panini Copa 2026">
+  <meta name="twitter:title" content="Panini Copa 2026">
+  <meta property="og:description" content="Garanta seu álbum de capa dura com 30, 60 ou 90 pacotes de figurinhas inclusos.">
+  <meta name="twitter:description" content="Garanta seu álbum de capa dura com 30, 60 ou 90 pacotes de figurinhas inclusos.">
+  <script>
+    if (window.location.pathname.endsWith('/index.html')) {
+      var newPath = window.location.pathname.replace('/index.html', '/');
+      window.history.replaceState(null, '', newPath);
+    }
+
+    // Script to preserve tracking parameters (UTMs) through the funnel
+    document.addEventListener('click', function (e) {
+      const link = e.target.closest('a');
+      if (link && link.href) {
+        try {
+          const url = new URL(link.href, window.location.origin);
+          // Append params to ALL links to ensure full tracking coverage
+          if (url.origin === window.location.origin) {
+            const currentParams = new URLSearchParams(window.location.search);
+            currentParams.forEach((val, key) => {
+              if (!url.searchParams.has(key)) url.searchParams.set(key, val);
+            });
+            link.href = url.toString();
+          }
+        } catch (err) { console.error("Error patching link:", err); }
+      }
+    }, true);
+  </script>
+
+  <link rel="stylesheet" crossorigin="" href="css/style.css">
+
+  <script src="js/main.js"></script>
+  <style type="text/css">
+    :where(html[dir="ltr"]),
+    :where([data-sonner-toaster][dir="ltr"]) {
+      --toast-icon-margin-start: -3px;
+      --toast-icon-margin-end: 4px;
+      --toast-svg-margin-start: -1px;
+      --toast-svg-margin-end: 0px;
+      --toast-button-margin-start: auto;
+      --toast-button-margin-end: 0;
+      --toast-close-button-start: 0;
+      --toast-close-button-end: unset;
+      --toast-close-button-transform: translate(-35%, -35%)
+    }
+
+    :where(html[dir="rtl"]),
+    :where([data-sonner-toaster][dir="rtl"]) {
+      --toast-icon-margin-start: 4px;
+      --toast-icon-margin-end: -3px;
+      --toast-svg-margin-start: 0px;
+      --toast-svg-margin-end: -1px;
+      --toast-button-margin-start: 0;
+      --toast-button-margin-end: auto;
+      --toast-close-button-start: unset;
+      --toast-close-button-end: 0;
+      --toast-close-button-transform: translate(35%, -35%)
+    }
+
+    :where([data-sonner-toaster]) {
+      position: fixed;
+      width: var(--width);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      --gray1: hsl(0, 0%, 99%);
+      --gray2: hsl(0, 0%, 97.3%);
+      --gray3: hsl(0, 0%, 95.1%);
+      --gray4: hsl(0, 0%, 93%);
+      --gray5: hsl(0, 0%, 90.9%);
+      --gray6: hsl(0, 0%, 88.7%);
+      --gray7: hsl(0, 0%, 85.8%);
+      --gray8: hsl(0, 0%, 78%);
+      --gray9: hsl(0, 0%, 56.1%);
+      --gray10: hsl(0, 0%, 52.3%);
+      --gray11: hsl(0, 0%, 43.5%);
+      --gray12: hsl(0, 0%, 9%);
+      --border-radius: 8px;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      outline: none;
+      z-index: 999999999;
+      transition: transform .4s ease
+    }
+
+    :where([data-sonner-toaster][data-lifted="true"]) {
+      transform: translateY(-10px)
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      :where([data-sonner-toaster][data-lifted="true"]) {
+        transform: none
+      }
+    }
+
+    :where([data-sonner-toaster][data-x-position="right"]) {
+      right: var(--offset-right)
+    }
+
+    :where([data-sonner-toaster][data-x-position="left"]) {
+      left: var(--offset-left)
+    }
+
+    :where([data-sonner-toaster][data-x-position="center"]) {
+      left: 50%;
+      transform: translate(-50%)
+    }
+
+    :where([data-sonner-toaster][data-y-position="top"]) {
+      top: var(--offset-top)
+    }
+
+    :where([data-sonner-toaster][data-y-position="bottom"]) {
+      bottom: var(--offset-bottom)
+    }
+
+    :where([data-sonner-toast]) {
+      --y: translateY(100%);
+      --lift-amount: calc(var(--lift) * var(--gap));
+      z-index: var(--z-index);
+      position: absolute;
+      opacity: 0;
+      transform: var(--y);
+      filter: blur(0);
+      touch-action: none;
+      transition: transform .4s, opacity .4s, height .4s, box-shadow .2s;
+      box-sizing: border-box;
+      outline: none;
+      overflow-wrap: anywhere
+    }
+
+    :where([data-sonner-toast][data-styled="true"]) {
+      padding: 16px;
+      background: var(--normal-bg);
+      border: 1px solid var(--normal-border);
+      color: var(--normal-text);
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 12px #0000001a;
+      width: var(--width);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    :where([data-sonner-toast]:focus-visible) {
+      box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003
+    }
+
+    :where([data-sonner-toast][data-y-position="top"]) {
+      top: 0;
+      --y: translateY(-100%);
+      --lift: 1;
+      --lift-amount: calc(1 * var(--gap))
+    }
+
+    :where([data-sonner-toast][data-y-position="bottom"]) {
+      bottom: 0;
+      --y: translateY(100%);
+      --lift: -1;
+      --lift-amount: calc(var(--lift) * var(--gap))
+    }
+
+    :where([data-sonner-toast]) :where([data-description]) {
+      font-weight: 400;
+      line-height: 1.4;
+      color: inherit
+    }
+
+    :where([data-sonner-toast]) :where([data-title]) {
+      font-weight: 500;
+      line-height: 1.5;
+      color: inherit
+    }
+
+    :where([data-sonner-toast]) :where([data-icon]) {
+      display: flex;
+      height: 16px;
+      width: 16px;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      flex-shrink: 0;
+      margin-left: var(--toast-icon-margin-start);
+      margin-right: var(--toast-icon-margin-end)
+    }
+
+    :where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg {
+      opacity: 0;
+      transform: scale(.8);
+      transform-origin: center;
+      animation: sonner-fade-in .3s ease forwards
+    }
+
+    :where([data-sonner-toast]) :where([data-icon])>* {
+      flex-shrink: 0
+    }
+
+    :where([data-sonner-toast]) :where([data-icon]) svg {
+      margin-left: var(--toast-svg-margin-start);
+      margin-right: var(--toast-svg-margin-end)
+    }
+
+    :where([data-sonner-toast]) :where([data-content]) {
+      display: flex;
+      flex-direction: column;
+      gap: 2px
+    }
+
+    [data-sonner-toast][data-styled=true] [data-button] {
+      border-radius: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+      height: 24px;
+      font-size: 12px;
+      color: var(--normal-bg);
+      background: var(--normal-text);
+      margin-left: var(--toast-button-margin-start);
+      margin-right: var(--toast-button-margin-end);
+      border: none;
+      cursor: pointer;
+      outline: none;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      transition: opacity .4s, box-shadow .2s
+    }
+
+    :where([data-sonner-toast]) :where([data-button]):focus-visible {
+      box-shadow: 0 0 0 2px #0006
+    }
+
+    :where([data-sonner-toast]) :where([data-button]):first-of-type {
+      margin-left: var(--toast-button-margin-start);
+      margin-right: var(--toast-button-margin-end)
+    }
+
+    :where([data-sonner-toast]) :where([data-cancel]) {
+      color: var(--normal-text);
+      background: rgba(0, 0, 0, .08)
+    }
+
+    :where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]) {
+      background: rgba(255, 255, 255, .3)
+    }
+
+    :where([data-sonner-toast]) :where([data-close-button]) {
+      position: absolute;
+      left: var(--toast-close-button-start);
+      right: var(--toast-close-button-end);
+      top: 0;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      color: var(--gray12);
+      border: 1px solid var(--gray4);
+      transform: var(--toast-close-button-transform);
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1;
+      transition: opacity .1s, background .2s, border-color .2s
+    }
+
+    [data-sonner-toast] [data-close-button] {
+      background: var(--gray1)
+    }
+
+    :where([data-sonner-toast]) :where([data-close-button]):focus-visible {
+      box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003
+    }
+
+    :where([data-sonner-toast]) :where([data-disabled="true"]) {
+      cursor: not-allowed
+    }
+
+    :where([data-sonner-toast]):hover :where([data-close-button]):hover {
+      background: var(--gray2);
+      border-color: var(--gray5)
+    }
+
+    :where([data-sonner-toast][data-swiping="true"]):before {
+      content: "";
+      position: absolute;
+      left: -50%;
+      right: -50%;
+      height: 100%;
+      z-index: -1
+    }
+
+    :where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before {
+      bottom: 50%;
+      transform: scaleY(3) translateY(50%)
+    }
+
+    :where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before {
+      top: 50%;
+      transform: scaleY(3) translateY(-50%)
+    }
+
+    :where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      transform: scaleY(2)
+    }
+
+    :where([data-sonner-toast]):after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: calc(var(--gap) + 1px);
+      bottom: 100%;
+      width: 100%
+    }
+
+    :where([data-sonner-toast][data-mounted="true"]) {
+      --y: translateY(0);
+      opacity: 1
+    }
+
+    :where([data-sonner-toast][data-expanded="false"][data-front="false"]) {
+      --scale: var(--toasts-before) * .05 + 1;
+      --y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));
+      height: var(--front-toast-height)
+    }
+
+    :where([data-sonner-toast])>* {
+      transition: opacity .4s
+    }
+
+    :where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>* {
+      opacity: 0
+    }
+
+    :where([data-sonner-toast][data-visible="false"]) {
+      opacity: 0;
+      pointer-events: none
+    }
+
+    :where([data-sonner-toast][data-mounted="true"][data-expanded="true"]) {
+      --y: translateY(calc(var(--lift) * var(--offset)));
+      height: var(--initial-height)
+    }
+
+    :where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]) {
+      --y: translateY(calc(var(--lift) * -100%));
+      opacity: 0
+    }
+
+    :where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]) {
+      --y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));
+      opacity: 0
+    }
+
+    :where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]) {
+      --y: translateY(40%);
+      opacity: 0;
+      transition: transform .5s, opacity .2s
+    }
+
+    :where([data-sonner-toast][data-removed="true"][data-front="false"]):before {
+      height: calc(var(--initial-height) + 20%)
+    }
+
+    [data-sonner-toast][data-swiping=true] {
+      transform: var(--y) translateY(var(--swipe-amount-y, 0px)) translate(var(--swipe-amount-x, 0px));
+      transition: none
+    }
+
+    [data-sonner-toast][data-swiped=true] {
+      user-select: none
+    }
+
+    [data-sonner-toast][data-swipe-out=true][data-y-position=bottom],
+    [data-sonner-toast][data-swipe-out=true][data-y-position=top] {
+      animation-duration: .2s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards
+    }
+
+    [data-sonner-toast][data-swipe-out=true][data-swipe-direction=left] {
+      animation-name: swipe-out-left
+    }
+
+    [data-sonner-toast][data-swipe-out=true][data-swipe-direction=right] {
+      animation-name: swipe-out-right
+    }
+
+    [data-sonner-toast][data-swipe-out=true][data-swipe-direction=up] {
+      animation-name: swipe-out-up
+    }
+
+    [data-sonner-toast][data-swipe-out=true][data-swipe-direction=down] {
+      animation-name: swipe-out-down
+    }
+
+    @keyframes swipe-out-left {
+      0% {
+        transform: var(--y) translate(var(--swipe-amount-x));
+        opacity: 1
+      }
+
+      to {
+        transform: var(--y) translate(calc(var(--swipe-amount-x) - 100%));
+        opacity: 0
+      }
+    }
+
+    @keyframes swipe-out-right {
+      0% {
+        transform: var(--y) translate(var(--swipe-amount-x));
+        opacity: 1
+      }
+
+      to {
+        transform: var(--y) translate(calc(var(--swipe-amount-x) + 100%));
+        opacity: 0
+      }
+    }
+
+    @keyframes swipe-out-up {
+      0% {
+        transform: var(--y) translateY(var(--swipe-amount-y));
+        opacity: 1
+      }
+
+      to {
+        transform: var(--y) translateY(calc(var(--swipe-amount-y) - 100%));
+        opacity: 0
+      }
+    }
+
+    @keyframes swipe-out-down {
+      0% {
+        transform: var(--y) translateY(var(--swipe-amount-y));
+        opacity: 1
+      }
+
+      to {
+        transform: var(--y) translateY(calc(var(--swipe-amount-y) + 100%));
+        opacity: 0
+      }
+    }
+
+    @media (max-width: 600px) {
+      [data-sonner-toaster] {
+        position: fixed;
+        right: var(--mobile-offset-right);
+        left: var(--mobile-offset-left);
+        width: 100%
+      }
+
+      [data-sonner-toaster][dir=rtl] {
+        left: calc(var(--mobile-offset-left) * -1)
+      }
+
+      [data-sonner-toaster] [data-sonner-toast] {
+        left: 0;
+        right: 0;
+        width: calc(100% - var(--mobile-offset-left) * 2)
+      }
+
+      [data-sonner-toaster][data-x-position=left] {
+        left: var(--mobile-offset-left)
+      }
+
+      [data-sonner-toaster][data-y-position=bottom] {
+        bottom: var(--mobile-offset-bottom)
+      }
+
+      [data-sonner-toaster][data-y-position=top] {
+        top: var(--mobile-offset-top)
+      }
+
+      [data-sonner-toaster][data-x-position=center] {
+        left: var(--mobile-offset-left);
+        right: var(--mobile-offset-right);
+        transform: none
+      }
+    }
+
+    [data-sonner-toaster][data-theme=light] {
+      --normal-bg: #fff;
+      --normal-border: var(--gray4);
+      --normal-text: var(--gray12);
+      --success-bg: hsl(143, 85%, 96%);
+      --success-border: hsl(145, 92%, 91%);
+      --success-text: hsl(140, 100%, 27%);
+      --info-bg: hsl(208, 100%, 97%);
+      --info-border: hsl(221, 91%, 91%);
+      --info-text: hsl(210, 92%, 45%);
+      --warning-bg: hsl(49, 100%, 97%);
+      --warning-border: hsl(49, 91%, 91%);
+      --warning-text: hsl(31, 92%, 45%);
+      --error-bg: hsl(359, 100%, 97%);
+      --error-border: hsl(359, 100%, 94%);
+      --error-text: hsl(360, 100%, 45%)
+    }
+
+    [data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true] {
+      --normal-bg: #000;
+      --normal-border: hsl(0, 0%, 20%);
+      --normal-text: var(--gray1)
+    }
+
+    [data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true] {
+      --normal-bg: #fff;
+      --normal-border: var(--gray3);
+      --normal-text: var(--gray12)
+    }
+
+    [data-sonner-toaster][data-theme=dark] {
+      --normal-bg: #000;
+      --normal-bg-hover: hsl(0, 0%, 12%);
+      --normal-border: hsl(0, 0%, 20%);
+      --normal-border-hover: hsl(0, 0%, 25%);
+      --normal-text: var(--gray1);
+      --success-bg: hsl(150, 100%, 6%);
+      --success-border: hsl(147, 100%, 12%);
+      --success-text: hsl(150, 86%, 65%);
+      --info-bg: hsl(215, 100%, 6%);
+      --info-border: hsl(223, 100%, 12%);
+      --info-text: hsl(216, 87%, 65%);
+      --warning-bg: hsl(64, 100%, 6%);
+      --warning-border: hsl(60, 100%, 12%);
+      --warning-text: hsl(46, 87%, 65%);
+      --error-bg: hsl(358, 76%, 10%);
+      --error-border: hsl(357, 89%, 16%);
+      --error-text: hsl(358, 100%, 81%)
+    }
+
+    [data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button] {
+      background: var(--normal-bg);
+      border-color: var(--normal-border);
+      color: var(--normal-text)
+    }
+
+    [data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]:hover {
+      background: var(--normal-bg-hover);
+      border-color: var(--normal-border-hover)
+    }
+
+    [data-rich-colors=true][data-sonner-toast][data-type=success],
+    [data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button] {
+      background: var(--success-bg);
+      border-color: var(--success-border);
+      color: var(--success-text)
+    }
+
+    [data-rich-colors=true][data-sonner-toast][data-type=info],
+    [data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button] {
+      background: var(--info-bg);
+      border-color: var(--info-border);
+      color: var(--info-text)
+    }
+
+    [data-rich-colors=true][data-sonner-toast][data-type=warning],
+    [data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button] {
+      background: var(--warning-bg);
+      border-color: var(--warning-border);
+      color: var(--warning-text)
+    }
+
+    [data-rich-colors=true][data-sonner-toast][data-type=error],
+    [data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button] {
+      background: var(--error-bg);
+      border-color: var(--error-border);
+      color: var(--error-text)
+    }
+
+    .sonner-loading-wrapper {
+      --size: 16px;
+      height: var(--size);
+      width: var(--size);
+      position: absolute;
+      inset: 0;
+      z-index: 10
+    }
+
+    .sonner-loading-wrapper[data-visible=false] {
+      transform-origin: center;
+      animation: sonner-fade-out .2s ease forwards
+    }
+
+    .sonner-spinner {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      height: var(--size);
+      width: var(--size)
+    }
+
+    .sonner-loading-bar {
+      animation: sonner-spin 1.2s linear infinite;
+      background: var(--gray11);
+      border-radius: 6px;
+      height: 8%;
+      left: -10%;
+      position: absolute;
+      top: -3.9%;
+      width: 24%
+    }
+
+    .sonner-loading-bar:nth-child(1) {
+      animation-delay: -1.2s;
+      transform: rotate(.0001deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(2) {
+      animation-delay: -1.1s;
+      transform: rotate(30deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(3) {
+      animation-delay: -1s;
+      transform: rotate(60deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(4) {
+      animation-delay: -.9s;
+      transform: rotate(90deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(5) {
+      animation-delay: -.8s;
+      transform: rotate(120deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(6) {
+      animation-delay: -.7s;
+      transform: rotate(150deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(7) {
+      animation-delay: -.6s;
+      transform: rotate(180deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(8) {
+      animation-delay: -.5s;
+      transform: rotate(210deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(9) {
+      animation-delay: -.4s;
+      transform: rotate(240deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(10) {
+      animation-delay: -.3s;
+      transform: rotate(270deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(11) {
+      animation-delay: -.2s;
+      transform: rotate(300deg) translate(146%)
+    }
+
+    .sonner-loading-bar:nth-child(12) {
+      animation-delay: -.1s;
+      transform: rotate(330deg) translate(146%)
+    }
+
+    @keyframes sonner-fade-in {
+      0% {
+        opacity: 0;
+        transform: scale(.8)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
+
+    @keyframes sonner-fade-out {
+      0% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      to {
+        opacity: 0;
+        transform: scale(.8)
+      }
+    }
+
+    @keyframes sonner-spin {
+      0% {
+        opacity: 1
+      }
+
+      to {
+        opacity: .15
+      }
+    }
+
+    @media (prefers-reduced-motion) {
+
+      [data-sonner-toast],
+      [data-sonner-toast]>*,
+      .sonner-loading-bar {
+        transition: none !important;
+        animation: none !important
+      }
+    }
+
+    .sonner-loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-origin: center;
+      transition: opacity .2s, transform .2s
+    }
+
+    .sonner-loader[data-visible=false] {
+      opacity: 0;
+      transform: scale(.8) translate(-50%, -50%)
+    }
+  </style>
+  <style id="antigravity-scroll-lock-style">
+    html:root body.antigravity-scroll-lock {
+      overflow: hidden !important;
+    }
+  </style>
+  <style>
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    html::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+      <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]">
+      </ol>
+    </div>
+    <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+    <div class="min-h-screen bg-background">
+      <div class="max-w-[640px] mx-auto min-h-screen">
+        <div class="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
+          <div class="container mx-auto px-4 py-3 md:py-4 max-w-4xl">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <div class="flex justify-center sm:justify-start"><img alt="Panini" class="h-14 md:h-18 w-auto object-contain" src="images/logo-panini-256-BiVShRJp.png"></div>
+              <div class="flex items-center justify-center gap-2">
+                <div class="bg-panini-wine rounded px-4 py-2 flex items-center gap-2 min-w-[140px] justify-center">
+                  <p class="text-panini-wine-foreground/80 text-xs leading-tight">Encerra em:</p>
+                  <p class="text-panini-wine-foreground text-lg font-bold font-mono">14:43</p>
+                </div>
+                <div class="bg-panini-wine rounded px-4 py-2 flex items-center gap-2 min-w-[140px] justify-center">
+                  <p class="text-panini-wine-foreground/80 text-xs leading-tight">Restam:</p>
+                  <p class="text-panini-wine-foreground text-base font-bold">127 <span class="text-xs font-normal">Unidades</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="relative w-full flex flex-col">
+          <div class="w-full max-w-4xl mx-auto px-4 py-6 md:py-10 bg-background font-outfit">
+            <div class="text-center mb-6"><span class="inline-block bg-panini-gold text-panini-gold-foreground text-sm md:text-base font-semibold tracking-wide px-4 py-2 rounded-full border border-panini-gold/50">COMPRA
+                ÚNICA POR CPF</span></div>
+            <div class="text-center space-y-1 md:space-y-2 mb-2"><img alt="FIFA 2026" class="h-24 md:h-32 w-auto object-contain mx-auto mb-2" src="images/fifa26-DBrPmei8.png">
+              <p class="text-sm md:text-base font-semibold text-muted-foreground uppercase tracking-[0.2em] md:tracking-[0.3em]">
+                Álbum Oficial</p>
+              <p class="text-sm md:text-base font-medium text-muted-foreground tracking-widest">EUA • Canadá • México
+              </p>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-center text-foreground mb-4 tracking-tight">COPA 2026
+            </h1>
+            <div class="text-center space-y-3 mb-8">
+              <p class="text-base md:text-lg text-muted-foreground">O maior evento do futebol mundial está chegando!</p>
+              <p class="text-base md:text-lg text-muted-foreground">Garanta seu álbum de capa dura com 30, 60 ou 90
+                pacotes de figurinhas inclusos.</p>
+              <p class="text-base md:text-lg font-semibold text-foreground">Apenas 5.000 unidades disponíveis para o
+                Brasil!</p>
+            </div>
+            <div class="flex justify-center"><img alt="Kit Colecionador" class="w-full max-w-md object-contain rounded-lg" src="images/1alb3box-vOgp6SlD.webp"></div>
+          </div>
+        </section>
+        <section class="w-full max-w-4xl mx-auto px-4 py-8 bg-background">
+          <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground mb-2">Escolha seu Kit</h2>
+          <p class="text-center text-muted-foreground mb-8">Quanto mais pacotes, mais chances de completar o álbum!</p>
+          <div class="flex flex-col gap-4">
+            <div class="relative rounded-2xl border-2 overflow-visible cursor-pointer transition-all bg-background border-primary shadow-sm">
+              <div class="absolute -top-3 right-3 bg-panini-green text-panini-green-foreground text-xs font-bold px-2 py-1 rounded-full z-10">
+                -53%</div>
+              <div class="p-3">
+                <div class="flex items-start gap-3">
+                  <div class="shrink-0 mt-6">
+                    <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors border-muted-foreground/40">
+                    </div>
+                  </div><img alt="Kit Básico" class="h-[72px] w-[72px] object-contain rounded-xl shrink-0" src="images/1alb1box-DhHQnI1N.webp">
+                  <div class="flex-1 min-w-0 flex justify-between gap-2">
+                    <div class="min-w-0">
+                      <h3 class="text-sm font-bold text-foreground leading-tight">Kit Básico</h3>
+                      <p class="text-xs text-muted-foreground mt-0.5 leading-snug">1 Álbum Capa Dura + 10 Pacotes</p>
+                      <div class="flex items-center gap-1 mt-1.5"><span class="text-[10px] bg-muted text-muted-foreground px-2 py-0.5 rounded-full whitespace-nowrap">70
+                          figurinhas</span><span class="text-[10px] bg-panini-green/10 text-panini-green font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">Frete
+                          Grátis</span></div>
+                    </div>
+                    <div class="text-right shrink-0">
+                      <p class="text-[10px] text-muted-foreground line-through">R$ 84,29</p>
+                      <p class="text-lg font-extrabold text-foreground leading-tight">R$ 39,90</p>
+                      <p class="text-[10px] text-muted-foreground">via PIX</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-t border-border px-3 py-2 text-center">
+                <p class="text-xs text-panini-green font-semibold">Voce economiza R$ 44,39</p>
+              </div>
+            </div>
+            <div class="relative rounded-2xl border-2 overflow-visible cursor-pointer transition-all bg-background border-primary shadow-sm">
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10"><span class="bg-panini-green text-panini-green-foreground text-xs font-bold px-4 py-1 rounded-full">MAIS
+                  VENDIDO</span></div>
+              <div class="absolute -top-3 right-3 bg-panini-green text-panini-green-foreground text-xs font-bold px-2 py-1 rounded-full z-10">
+                -60%</div>
+              <div class="p-3">
+                <div class="flex items-start gap-3">
+                  <div class="shrink-0 mt-6">
+                    <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors border-muted-foreground/40">
+                    </div>
+                  </div><img alt="Kit Iniciante" class="h-[72px] w-[72px] object-contain rounded-xl shrink-0" src="images/1alb1box-DhHQnI1N.webp">
+                  <div class="flex-1 min-w-0 flex justify-between gap-2">
+                    <div class="min-w-0">
+                      <h3 class="text-sm font-bold text-foreground leading-tight">Kit Iniciante</h3>
+                      <p class="text-xs text-muted-foreground mt-0.5 leading-snug">1 Álbum Capa Dura + 30 Pacotes</p>
+                      <div class="flex items-center gap-1 mt-1.5"><span class="text-[10px] bg-muted text-muted-foreground px-2 py-0.5 rounded-full whitespace-nowrap">210
+                          figurinhas</span><span class="text-[10px] bg-panini-green/10 text-panini-green font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">Frete
+                          Grátis</span></div>
+                    </div>
+                    <div class="text-right shrink-0">
+                      <p class="text-[10px] text-muted-foreground line-through">R$ 149,23</p>
+                      <p class="text-lg font-extrabold text-foreground leading-tight">R$ 59,90</p>
+                      <p class="text-[10px] text-muted-foreground">via PIX</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-t border-border px-3 py-2 text-center">
+                <p class="text-xs text-panini-green font-semibold">Voce economiza R$ 89,33</p>
+              </div>
+            </div>
+            <div class="relative rounded-2xl border-2 overflow-visible cursor-pointer transition-all bg-background border-primary shadow-sm">
+              <div class="absolute -top-3 right-3 bg-panini-green text-panini-green-foreground text-xs font-bold px-2 py-1 rounded-full z-10">
+                -74%</div>
+              <div class="p-3">
+                <div class="flex items-start gap-3">
+                  <div class="shrink-0 mt-6">
+                    <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors border-muted-foreground/40">
+                    </div>
+                  </div><img alt="Kit Campeão" class="h-[72px] w-[72px] object-contain rounded-xl shrink-0" src="images/1alb2box-CzpIAZSQ.webp">
+                  <div class="flex-1 min-w-0 flex justify-between gap-2">
+                    <div class="min-w-0">
+                      <h3 class="text-sm font-bold text-foreground leading-tight">Kit Campeão</h3>
+                      <p class="text-xs text-muted-foreground mt-0.5 leading-snug">1 Álbum Capa Dura + 60 Pacotes</p>
+                      <div class="flex items-center gap-1 mt-1.5"><span class="text-[10px] bg-muted text-muted-foreground px-2 py-0.5 rounded-full whitespace-nowrap">420
+                          figurinhas</span><span class="text-[10px] bg-panini-green/10 text-panini-green font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">Frete
+                          Grátis</span></div>
+                    </div>
+                    <div class="text-right shrink-0">
+                      <p class="text-[10px] text-muted-foreground line-through">R$ 372,50</p>
+                      <p class="text-lg font-extrabold text-foreground leading-tight">R$ 97,90</p>
+                      <p class="text-[10px] text-muted-foreground">via PIX</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-t border-border px-3 py-2 text-center">
+                <p class="text-xs text-panini-green font-semibold">Voce economiza R$ 274,60</p>
+              </div>
+            </div>
+            <div class="relative rounded-2xl border-2 overflow-visible cursor-pointer transition-all bg-background border-panini-green shadow-lg">
+              <div class="absolute -top-3 right-3 bg-panini-green text-panini-green-foreground text-xs font-bold px-2 py-1 rounded-full z-10">
+                -85%</div>
+              <div class="p-3">
+                <div class="flex items-start gap-3">
+                  <div class="shrink-0 mt-6">
+                    <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors border-panini-green">
+                      <div class="w-3.5 h-3.5 rounded-full bg-panini-green"></div>
+                    </div>
+                  </div><img alt="Kit Colecionador" class="h-[72px] w-[72px] object-contain rounded-xl shrink-0" src="images/1alb3box-vOgp6SlD.webp">
+                  <div class="flex-1 min-w-0 flex justify-between gap-2">
+                    <div class="min-w-0">
+                      <h3 class="text-sm font-bold text-foreground leading-tight">Kit Colecionador</h3>
+                      <p class="text-xs text-muted-foreground mt-0.5 leading-snug">1 Álbum Capa Dura + 90 Pacotes</p>
+                      <div class="flex items-center gap-1 mt-1.5"><span class="text-[10px] bg-muted text-muted-foreground px-2 py-0.5 rounded-full whitespace-nowrap">630
+                          figurinhas</span><span class="text-[10px] bg-panini-green/10 text-panini-green font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">Frete
+                          Grátis</span></div>
+                    </div>
+                    <div class="text-right shrink-0">
+                      <p class="text-[10px] text-muted-foreground line-through">R$ 796,00</p>
+                      <p class="text-lg font-extrabold text-foreground leading-tight">R$ 119,90</p>
+                      <p class="text-[10px] text-muted-foreground">via PIX</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-t border-border px-3 py-2 text-center">
+                <p class="text-xs text-panini-green font-semibold">Voce economiza R$ 676,10</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 text-center"><button class="w-full max-w-md bg-panini-green text-panini-green-foreground font-bold text-lg py-4 px-8 rounded-xl hover:opacity-90 transition-opacity shadow-lg">GARANTIR
+              MEU KIT AGORA</button>
+            <p class="text-sm text-muted-foreground mt-2">Frete Grátis para Todo Brasil</p>
+          </div>
+        </section>
+        <section class="w-full max-w-4xl mx-auto px-4 py-10 bg-background">
+          <div class="text-center mb-2">
+            <h2 class="text-2xl md:text-3xl font-bold text-foreground">Sobre o Álbum Oficial</h2>
+            <div class="flex items-center justify-center gap-1 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy h-5 w-5 text-panini-gold">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                <path d="M4 22h16"></path>
+                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+              </svg>
+              <p class="text-muted-foreground text-sm">Edição Histórica</p>
+            </div>
+          </div>
+          <p class="text-center text-muted-foreground mb-8">O maior álbum da história da Copa do Mundo</p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-muted rounded-xl p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open h-8 w-8 text-panini-wine mx-auto mb-2">
+                <path d="M12 7v14"></path>
+                <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                </path>
+              </svg>
+              <h3 class="font-bold text-foreground text-sm">112 Páginas</h3>
+              <p class="text-xs text-muted-foreground mt-1">O maior álbum já produzido</p>
+            </div>
+            <div class="bg-muted rounded-xl p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sticker h-8 w-8 text-panini-wine mx-auto mb-2">
+                <path d="M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z"></path>
+                <path d="M14 3v4a2 2 0 0 0 2 2h4"></path>
+                <path d="M8 13h.01"></path>
+                <path d="M16 13h.01"></path>
+                <path d="M10 16s.8 1 2 1c1.3 0 2-1 2-1"></path>
+              </svg>
+              <h3 class="font-bold text-foreground text-sm">980 Figurinhas</h3>
+              <p class="text-xs text-muted-foreground mt-1">Coleção completa mais extensa</p>
+            </div>
+            <div class="bg-muted rounded-xl p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package h-8 w-8 text-panini-wine mx-auto mb-2">
+                <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z">
+                </path>
+                <path d="M12 22V12"></path>
+                <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path>
+                <path d="m7.5 4.27 9 5.15"></path>
+              </svg>
+              <h3 class="font-bold text-foreground text-sm">7 Figurinhas por Pacote</h3>
+              <p class="text-xs text-muted-foreground mt-1">Maior chance de figurinhas cromadas</p>
+            </div>
+            <div class="bg-muted rounded-xl p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe h-8 w-8 text-panini-wine mx-auto mb-2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+              <h3 class="font-bold text-foreground text-sm">48 Seleções</h3>
+              <p class="text-xs text-muted-foreground mt-1">Todas as equipes classificadas</p>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3 bg-muted rounded-lg p-3"><span class="text-panini-green font-bold text-lg leading-none">✓</span>
+              <p class="text-sm text-foreground">Primeira Copa do Mundo com 48 seleções</p>
+            </div>
+            <div class="flex items-start gap-3 bg-muted rounded-lg p-3"><span class="text-panini-green font-bold text-lg leading-none">✓</span>
+              <p class="text-sm text-foreground">Álbum com 112 páginas - recorde histórico</p>
+            </div>
+            <div class="flex items-start gap-3 bg-muted rounded-lg p-3"><span class="text-panini-green font-bold text-lg leading-none">✓</span>
+              <p class="text-sm text-foreground">Três países-sede: EUA, Canadá e México</p>
+            </div>
+          </div>
+        </section>
+        <section class="w-full max-w-4xl mx-auto px-4 py-10 bg-background">
+          <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground mb-8">Por que garantir seu kit agora?
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div class="flex items-start gap-3 bg-muted rounded-xl p-4">
+              <div class="bg-panini-wine rounded-lg p-2 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-percent h-5 w-5 text-panini-wine-foreground">
+                  <line x1="19" x2="5" y1="5" y2="19"></line>
+                  <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                  <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                </svg></div>
+              <div>
+                <h3 class="font-bold text-foreground text-sm">Desconto de 47% exclusivo</h3>
+                <p class="text-xs text-muted-foreground">Desconto exclusivo de pré-venda</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-muted rounded-xl p-4">
+              <div class="bg-panini-wine rounded-lg p-2 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck h-5 w-5 text-panini-wine-foreground">
+                  <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
+                  <path d="M15 18H9"></path>
+                  <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
+                  <circle cx="17" cy="18" r="2"></circle>
+                  <circle cx="7" cy="18" r="2"></circle>
+                </svg></div>
+              <div>
+                <h3 class="font-bold text-foreground text-sm">Entrega prioritária</h3>
+                <p class="text-xs text-muted-foreground">Receba antes do lançamento oficial</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-muted rounded-xl p-4">
+              <div class="bg-panini-wine rounded-lg p-2 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-5 w-5 text-panini-wine-foreground">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                  </path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg></div>
+              <div>
+                <h3 class="font-bold text-foreground text-sm">Produto original Panini</h3>
+                <p class="text-xs text-muted-foreground">Álbum oficial 100% autêntico</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-muted rounded-xl p-4">
+              <div class="bg-panini-wine rounded-lg p-2 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package h-5 w-5 text-panini-wine-foreground">
+                  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z">
+                  </path>
+                  <path d="M12 22V12"></path>
+                  <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path>
+                  <path d="m7.5 4.27 9 5.15"></path>
+                </svg></div>
+              <div>
+                <h3 class="font-bold text-foreground text-sm">Frete Grátis</h3>
+                <p class="text-xs text-muted-foreground">Entrega grátis para todo o Brasil</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-6 flex-wrap text-xs text-muted-foreground">
+            <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-4 w-4 text-panini-green">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                </path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg><span>Compra 100% Segura</span></div>
+            <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-4 w-4 text-panini-green">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                </path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg><span>Dados Protegidos</span></div>
+            <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-4 w-4 text-panini-green">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                </path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg><span>Produto Original</span></div>
+          </div>
+        </section>
+        <section class="w-full max-w-4xl mx-auto px-4 py-10 bg-background">
+          <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground mb-8">O que nossos clientes dizem</h2>
+          <div class="space-y-4">
+            <div class="bg-muted rounded-xl p-4">
+              <div class="flex items-center gap-3 mb-3"><img alt="Carlos Silva" src="data:image/jpeg;base64,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" class="h-12 w-12 rounded-full object-cover">
+                <div>
+                  <p class="font-bold text-foreground text-sm">Carlos Silva</p>
+                  <p class="text-xs text-muted-foreground">São Paulo - SP</p>
+                </div>
+                <div class="ml-auto flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg></div>
+              </div>
+              <h4 class="font-bold text-foreground text-sm mb-1">Chegou super rápido!</h4>
+              <p class="text-sm text-muted-foreground leading-relaxed">Comprei na pré-venda da Copa passada e foi
+                incrível. Chegou antes do lançamento oficial e consegui começar a coleção antes de todo mundo. Super
+                recomendo!</p>
+              <div class="flex items-center gap-2 mt-3 text-xs text-muted-foreground"><span class="text-panini-green font-semibold">Compra verificada</span><span>2 dias atrás</span></div>
+            </div>
+            <div class="bg-muted rounded-xl p-4">
+              <div class="flex items-center gap-3 mb-3"><img alt="Amanda Costa" src="data:image/jpeg;base64,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" class="h-12 w-12 rounded-full object-cover">
+                <div>
+                  <p class="font-bold text-foreground text-sm">Amanda Costa</p>
+                  <p class="text-xs text-muted-foreground">Rio de Janeiro - RJ</p>
+                </div>
+                <div class="ml-auto flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg></div>
+              </div>
+              <h4 class="font-bold text-foreground text-sm mb-1">Melhor preço que encontrei</h4>
+              <p class="text-sm text-muted-foreground leading-relaxed">Pesquisei em vários lugares e aqui foi onde
+                encontrei o melhor preço. Ainda veio com frete grátis! Meu filho ficou muito feliz com o álbum.</p>
+              <div class="flex items-center gap-2 mt-3 text-xs text-muted-foreground"><span class="text-panini-green font-semibold">Compra verificada</span><span>3 dias atrás</span></div>
+            </div>
+            <div class="bg-muted rounded-xl p-4">
+              <div class="flex items-center gap-3 mb-3"><img alt="Roberto Almeida" src="images/ch2-BURtkCNJ.jpg" class="h-12 w-12 rounded-full object-cover">
+                <div>
+                  <p class="font-bold text-foreground text-sm">Roberto Almeida</p>
+                  <p class="text-xs text-muted-foreground">Belo Horizonte - MG</p>
+                </div>
+                <div class="ml-auto flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg></div>
+              </div>
+              <h4 class="font-bold text-foreground text-sm mb-1">Produto original garantido</h4>
+              <p class="text-sm text-muted-foreground leading-relaxed">Tinha medo de comprar online e vir produto
+                falsificado, mas veio tudo original com selo da Panini. Álbum de excelente qualidade e figurinhas
+                perfeitas.</p>
+              <div class="flex items-center gap-2 mt-3 text-xs text-muted-foreground"><span class="text-panini-green font-semibold">Compra verificada</span><span>4 dias atrás</span></div>
+            </div>
+            <div class="bg-muted rounded-xl p-4">
+              <div class="flex items-center gap-3 mb-3"><img alt="Fernanda Lima" src="data:image/jpeg;base64,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" class="h-12 w-12 rounded-full object-cover">
+                <div>
+                  <p class="font-bold text-foreground text-sm">Fernanda Lima</p>
+                  <p class="text-xs text-muted-foreground">Curitiba - PR</p>
+                </div>
+                <div class="ml-auto flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg></div>
+              </div>
+              <h4 class="font-bold text-foreground text-sm mb-1">Ótima experiência</h4>
+              <p class="text-sm text-muted-foreground leading-relaxed">Comprei o kit completo e valeu muito a pena. Com
+                90 pacotes consegui avançar bastante na coleção. Atendimento excelente e entrega dentro do prazo.</p>
+              <div class="flex items-center gap-2 mt-3 text-xs text-muted-foreground"><span class="text-panini-green font-semibold">Compra verificada</span><span>5 dias atrás</span></div>
+            </div>
+            <div class="bg-muted rounded-xl p-4">
+              <div class="flex items-center gap-3 mb-3"><img alt="Marcos Santos" src="data:image/jpeg;base64,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" class="h-12 w-12 rounded-full object-cover">
+                <div>
+                  <p class="font-bold text-foreground text-sm">Marcos Santos</p>
+                  <p class="text-xs text-muted-foreground">Porto Alegre - RS</p>
+                </div>
+                <div class="ml-auto flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-panini-gold text-panini-gold">
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                    </path>
+                  </svg></div>
+              </div>
+              <h4 class="font-bold text-foreground text-sm mb-1">Vou comprar de novo</h4>
+              <p class="text-sm text-muted-foreground leading-relaxed">Já é a segunda vez que compro aqui. Sempre chega
+                tudo certinho e bem embalado. Preço justo e frete grátis fazem toda a diferença. Recomendo!</p>
+              <div class="flex items-center gap-2 mt-3 text-xs text-muted-foreground"><span class="text-panini-green font-semibold">Compra verificada</span><span>6 dias atrás</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full max-w-4xl mx-auto px-4 py-10 bg-background">
+          <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground mb-8">Dúvidas Frequentes</h2>
+          <div class="space-y-2" data-orientation="vertical">
+            <div data-state="closed" data-orientation="vertical" class="border-b bg-muted rounded-xl px-4 border-none">
+              <h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r1:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r0:" class="flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180 text-sm font-semibold text-foreground hover:no-underline" data-radix-collection-item="">Quando meu pedido será entregue?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg></button></h3>
+              <div data-state="closed" id="radix-:r1:" hidden="" role="region" aria-labelledby="radix-:r0:" data-orientation="vertical" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+                <div class="pb-4 pt-0 text-sm text-muted-foreground leading-relaxed">Todos os pedidos da pré-venda serão
+                  enviados em até 7-15 dias úteis após a confirmação do pagamento. Você receberá o código de
+                  rastreamento por email assim que o pedido for despachado.</div>
+              </div>
+            </div>
+            <div data-state="closed" data-orientation="vertical" class="border-b bg-muted rounded-xl px-4 border-none">
+              <h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r3:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r2:" class="flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180 text-sm font-semibold text-foreground hover:no-underline" data-radix-collection-item="">As figurinhas e o álbum são originais?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg></button></h3>
+              <div data-state="closed" id="radix-:r3:" hidden="" role="region" aria-labelledby="radix-:r2:" data-orientation="vertical" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+                <div class="pb-4 pt-0 text-sm text-muted-foreground leading-relaxed">Sim! Trabalhamos diretamente com
+                  distribuidores oficiais. Todos os produtos são 100% originais Panini, lacrados de fábrica com selo de
+                  autenticidade.</div>
+              </div>
+            </div>
+            <div data-state="closed" data-orientation="vertical" class="border-b bg-muted rounded-xl px-4 border-none">
+              <h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r5:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r4:" class="flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180 text-sm font-semibold text-foreground hover:no-underline" data-radix-collection-item="">Posso escolher quais figurinhas vou receber?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg></button></h3>
+              <div data-state="closed" id="radix-:r5:" hidden="" role="region" aria-labelledby="radix-:r4:" data-orientation="vertical" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+                <div class="pb-4 pt-0 text-sm text-muted-foreground leading-relaxed">Os pacotes de figurinhas vêm
+                  lacrados e são aleatórios, assim como nas bancas e lojas. Cada pacote contém 5 figurinhas sortidas da
+                  coleção oficial da Copa do Mundo 2026.</div>
+              </div>
+            </div>
+            <div data-state="closed" data-orientation="vertical" class="border-b bg-muted rounded-xl px-4 border-none">
+              <h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r7:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r6:" class="flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180 text-sm font-semibold text-foreground hover:no-underline" data-radix-collection-item="">E se eu receber figurinhas repetidas?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg></button></h3>
+              <div data-state="closed" id="radix-:r7:" hidden="" role="region" aria-labelledby="radix-:r6:" data-orientation="vertical" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+                <div class="pb-4 pt-0 text-sm text-muted-foreground leading-relaxed">Isso faz parte da experiência de
+                  colecionar! Você pode trocar com amigos, familiares ou em grupos de colecionadores. E quanto mais
+                  pacotes, maior a chance de completar o álbum mais rápido.</div>
+              </div>
+            </div>
+            <div data-state="closed" data-orientation="vertical" class="border-b bg-muted rounded-xl px-4 border-none">
+              <h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r9:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r8:" class="flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180 text-sm font-semibold text-foreground hover:no-underline" data-radix-collection-item="">O frete é realmente grátis?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg></button></h3>
+              <div data-state="closed" id="radix-:r9:" hidden="" role="region" aria-labelledby="radix-:r8:" data-orientation="vertical" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+                <div class="pb-4 pt-0 text-sm text-muted-foreground leading-relaxed">Sim! O frete é 100% grátis para
+                  todo o Brasil em todos os nossos kits. Não há taxas escondidas ou custos adicionais.</div>
+              </div>
+            </div>
+            <div data-state="closed" data-orientation="vertical" class="border-b bg-muted rounded-xl px-4 border-none">
+              <h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:rb:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:ra:" class="flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180 text-sm font-semibold text-foreground hover:no-underline" data-radix-collection-item="">Quais formas de pagamento são aceitas?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg></button></h3>
+              <div data-state="closed" id="radix-:rb:" hidden="" role="region" aria-labelledby="radix-:ra:" data-orientation="vertical" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+                <div class="pb-4 pt-0 text-sm text-muted-foreground leading-relaxed">Aceitamos pagamento via PIX com
+                  aprovação instantânea. O PIX é a forma mais rápida e segura de pagar, e seu pedido é confirmado
+                  imediatamente após o pagamento.</div>
+              </div>
+            </div>
+            <div data-state="closed" data-orientation="vertical" class="border-b bg-muted rounded-xl px-4 border-none">
+              <h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:rd:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:rc:" class="flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180 text-sm font-semibold text-foreground hover:no-underline" data-radix-collection-item="">Posso cancelar meu pedido?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg></button></h3>
+              <div data-state="closed" id="radix-:rd:" hidden="" role="region" aria-labelledby="radix-:rc:" data-orientation="vertical" class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);">
+                <div class="pb-4 pt-0 text-sm text-muted-foreground leading-relaxed">Sim, você pode solicitar o
+                  cancelamento em até 7 dias após a compra, desde que o pedido ainda não tenha sido enviado. Entre em
+                  contato conosco pelo WhatsApp para solicitar.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="w-full max-w-4xl mx-auto px-4 py-8 bg-background border-t border-border">
+          <div class="flex flex-col items-center gap-4"><img alt="Panini" class="h-10 w-auto object-contain" src="images/logo-panini-256-BiVShRJp.png">
+            <div class="flex items-center gap-1 text-xs text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-4 w-4 text-panini-green">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                </path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg><span>Compra 100% Segura</span></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="preact-border-shadow-host" popover="manual" style="border: none; padding: 0px; margin: 0px; inset: 0px; position: fixed; width: 100vw; height: 100vh; background: transparent; pointer-events: none;">
+  </div>
+
+
+</body></html>
